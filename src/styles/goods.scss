@@ -1,0 +1,124 @@
+.goods {
+	padding: 40px 0;
+	@media(min-width: 1024px) {
+			padding: 60px 0;
+		}
+
+	&__title {
+		font-family: Inter;
+		font-weight: 900;
+		font-size: 24px;
+		line-height: 120%;
+		color: #1c1c1c;
+		margin-bottom: 24px;
+
+		@media(min-width: 768px) {
+				font-size: 32px;
+				margin-bottom: 32px;
+			}
+		@media(min-width: 768px) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__list {
+		display: grid;
+		gap: 32px 8px;
+		grid-template-columns: repeat(auto-fit, 1fr);
+
+		@media(min-width: 768px) {
+			gap: 32px 10px;
+			grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+
+		}
+		
+		@media(min-width: 1024px) {
+			gap: 40px 16px;
+			grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+		}
+
+		@media(min-width: 1440px) {
+			gap: 40px 16px;
+			grid-template-columns: repeat(auto-fit, minmax(302px, 1fr));
+		}
+		
+	}
+}
+
+.card {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+
+	&__link {
+		margin-bottom: 12px;
+		@media(min-width: 768px) {
+			margin-bottom: 19px;
+		}
+
+		@media(min-width: 1024px) {
+			margin-bottom: 16px;
+		}
+	}
+
+	&__image {
+		width: 100%;
+		object-fit: cover;
+		border-radius: 16px;
+	}
+
+	&__like-button {
+		position: absolute;
+		content: '';
+		top: 12px;
+		right: 12px;
+	}
+
+	&__info{
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 12px;
+		gap: 18px;
+		color: #1c1c1c;
+
+	@media(min-width: 768px) {
+		flex-direction: row;
+		justify-content: space-between;
+		margin-bottom: 37px;
+	}
+		@media(min-width: 1024px) {
+			flex-direction: row;
+			margin-bottom: 18px;
+		}
+		&-title {
+			font-size: 12px;
+			font-weight: 400;
+			@media(min-width: 768px) {
+					font-size: 16px;
+				}
+		}
+			
+		&-price {
+			font-size: 16px;
+			
+				@media(min-width: 768px) {
+					font-size: 20px;
+				}
+		}
+	}
+
+	&__basket {
+		border: 1px solid #0044f0;
+		border-radius: 32px;
+		padding: 12px 24px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 120%;
+		color: #0044f0;
+
+		&:hover{
+			background: #0044f0;
+			color: #fff;
+		}
+	}
+}

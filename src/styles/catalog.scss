@@ -1,0 +1,35 @@
+.catalog {
+	overflow-x: hidden;
+	padding-bottom: 20px;
+
+	@media(min-width: 768px){
+		padding-bottom: 32px;
+	}
+		@media(min-width: 768px) {
+			padding-bottom: 40px;
+		}
+	&__list {
+		display: flex;
+		gap: 4px;
+	}
+
+	&__link {
+		display: block;
+		color: #969eae;
+		background: #eeeff2;
+		padding: 11px 14px 13px;
+		border-radius: 32px;
+		border: 1px solid transparent;
+		align-content: center;
+
+		&:hover {
+				color: #0044f0;
+				border: 1px solid #0044f0;
+			}
+
+		&-active{
+			color: #fff;
+			background-color: #0044f0;
+		}
+	}
+}
